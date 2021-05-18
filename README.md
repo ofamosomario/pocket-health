@@ -38,6 +38,4 @@
 
 > Run in terminal: rubocop
 
-![RUBOCOP-RSPEC](https://coins.ippo.space/97cb9e51-f48d-43eb-8f8a-d676ee77d2ca.jpg)
-
 **Thank you!**
