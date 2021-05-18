@@ -1,0 +1,34 @@
+<div class="container">
+	<div class="login-container">
+    <div id="output"></div>
+    <div class="avatar">
+      <img src="https://cdn1.iconfinder.com/data/icons/virus-and-medical-2/340/protection_medical_virus_doctor_medicine_hospital_shield-128.png">
+    </div>
+    <div class="form-box">
+      <% if user.errors.any? %>
+        <div class="alert alert-warning" role="alert">
+          <div id="error_explanation">
+            Error:
+            <hr />
+            <% user.errors.each do |error| %>
+              <li><%= error.full_message %></li>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+      <center><h5>Sign Up</h5></center>
+      <hr />
+      <%= simple_form_for User.new, :url => url_for(action: 'create', controller: 'users'), method: :post do |f| %>
+        <%= f.input :username, placeholder: 'Username', label: false %>
+        <%= f.input :email, placeholder: 'Email', label: false %>
+        <%= f.input :password, placeholder: 'Password', label: false %>
+        <%= f.input :password_confirmation, placeholder: 'Password confirmation', label: false %>
+        <br />
+        <%= f.button :submit, value: 'Sign Up', class: 'btn btn-info btn-block login' %>
+        <hr />
+        <small><%= link_to 'Sign In', sign_in_path %></small>
+      <% end %>
+    </div>
+  </div>
+</div>
+

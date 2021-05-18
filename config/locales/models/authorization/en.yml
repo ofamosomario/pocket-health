@@ -1,0 +1,7 @@
+en:
+  create:
+    confirmation:
+      blocked: You tried serveral times. Your account has been blocked =(.
+      logged_in: Logged in.
+      logged_out: Logged out.
+      invalid: Email or password is invalid

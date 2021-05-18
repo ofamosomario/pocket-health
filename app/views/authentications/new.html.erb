@@ -1,0 +1,19 @@
+<div class="container">
+	<div class="login-container">
+    <div id="output"></div>
+    <div class="avatar">
+      <img src="https://cdn1.iconfinder.com/data/icons/virus-and-medical-2/340/medical_syringe_doctor_medicine_hospital_health_injection-128.png">
+    </div>
+    <div class="form-box">
+      <%= render 'shared/notice', notice: notice %>
+      <center><h5>Sign In</h5></center>
+      <hr />
+      <%= simple_form_for User.new, :url => url_for(action: :create, controller: :authentications), method: :post do |f| %>
+          <%= f.input :email, placeholder: 'Email', label: false %>
+          <%= f.input :password, placeholder: 'Password', label: false %>
+          <br />
+          <%= f.button :submit, value: 'Sign In', class: 'btn btn-info btn-block login' %>
+      <% end %>
+    </div>
+  </div>
+</div>

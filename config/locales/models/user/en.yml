@@ -1,0 +1,5 @@
+en:
+  create:
+    confirmation:
+      created: User was successfully created.
+      destroyed: User was successfully destroyed.
