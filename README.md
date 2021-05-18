@@ -22,6 +22,10 @@
 
 > rails s to execute the rails.
 
+# Heroku:
+
+> ([https://pocket-health.herokuapp.com/])(https://pocket-health.herokuapp.com/)
+
 # Tests
 > Run in terminal: rspec
 
