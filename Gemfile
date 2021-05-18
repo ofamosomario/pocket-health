@@ -40,8 +40,6 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 3.26'
-  # rspec
-  gem 'rspec-rails'
   # faker
   gem 'faker'
   # factory bot
@@ -49,6 +47,9 @@ group :development, :test do
   # Shoulda Matchers
   gem 'shoulda-matchers', '~> 4.0'
 end
+
+# rspec
+gem 'rspec-rails'
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
